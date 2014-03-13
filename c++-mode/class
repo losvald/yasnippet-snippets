@@ -2,7 +2,7 @@
 # name: class
 # key: cls
 # --
-class ${1:Name} {
+class ${1:`(camelize (file-name-base (buffer-file-name)))`} {
 public:
     ${1:$(yas/substr yas-text "[^: ]*")}();
     virtual $0~${1:$(yas/substr yas-text "[^: ]*")}();

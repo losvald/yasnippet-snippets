@@ -5,8 +5,9 @@
 (mapconcat 'upcase
  (split-string
   (substring (file-name-sans-extension (buffer-file-name))
-	     (+ 1 (length (expand-file-name
-			   (file-name-nondirectory default-directory)))))
+	     (length (expand-file-name
+		      (file-name-directory
+		       (substring default-directory 0 -1)))))
   "/")
  "_")
 `_`(upcase (file-name-extension (buffer-file-name)))`_}
