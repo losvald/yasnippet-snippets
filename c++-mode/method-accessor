@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: method-accessor
+# key: ma
+# --
+${2:auto} ${3:`(camelize (file-name-base (buffer-file-name)))`}::$1() const {
+  return $1_;
+}

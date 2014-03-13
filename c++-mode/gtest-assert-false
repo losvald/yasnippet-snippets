@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-assert-false
+# key: gaf
+# group: testing.gtest
+# --
+ASSERT_FALSE(${1:cond});

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-assert-throw
+# key: gah
+# group: testing.gtest
+# TODO: (when (string= "{" yas-text) "}"))
+# --
+ASSERT_ANY_THROW(${1:\{}$0});

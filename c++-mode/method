@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: method
+# key: m
+# --
+${3:void} ${5:`
+(camelize (file-name-base (buffer-file-name)))
+`}::${1:name}(${2:args})${4: const} {
+        return $0;
+}

@@ -3,8 +3,9 @@
 # key: <<
 # group: operator overloading
 # --
-std::ostream& operator<<(std::ostream& s, const ${1:type}& ${2:c})
-{
-         $0
-         return s;
+std::ostream& operator<<(std::ostream& os, const ${2:`
+(camelize (file-name-base (buffer-file-name)))
+`}& ${1:c}) {
+  os << $1.$0;
+  return os;
 }

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-fail
+# key: gf
+# group: testing.gtest
+# --
+`(upcase (yas-choose-value '("add_failure" "fail")))`();

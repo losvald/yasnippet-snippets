@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-expect-true
+# key: get
+# group: testing.gtest
+# --
+EXPECT_TRUE(${1:cond});

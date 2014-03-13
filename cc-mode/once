@@ -1,9 +1,17 @@
 #name : #ifndef XXX; #define XXX; #endif
 # key: once
 # --
-#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#ifndef ${1:`
+(mapconcat 'upcase
+ (split-string
+  (substring (file-name-sans-extension (buffer-file-name))
+	     (+ 1 (length (expand-file-name
+			   (file-name-nondirectory default-directory)))))
+  "/")
+ "_")
+`_`(upcase (file-name-extension (buffer-file-name)))`_}
 #define $1
 
 $0
 
-#endif /* $1 */
+#endif  /* $1 */

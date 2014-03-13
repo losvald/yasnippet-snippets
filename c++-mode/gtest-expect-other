@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-expect-other
+# key: geo
+# group: testing.gtest
+# --
+EXPECT_`
+(upcase (yas-choose-value '("ne" "lt" "le" "gt" "ge"
+	"streq" "strne" "strcaseq" "strcasene")))
+`(${1:expected}, ${2:actual});

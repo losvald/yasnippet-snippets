@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: visibilities
+# key: pp
+# --
+${1:protected:}
+$0private:

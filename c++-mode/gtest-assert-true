@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-assert-true
+# key: gat
+# group: testing.gtest
+# --
+ASSERT_TRUE(${1:cond});

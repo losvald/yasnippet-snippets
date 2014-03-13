@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: gtest-test
+# key: gt
+# group: testing.gtest
+# --
+TEST(${2:`
+(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
+`}Test, $1) {
+  $0
+}

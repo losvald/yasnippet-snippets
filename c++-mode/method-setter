@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: method-setter
+# key: ms
+# --
+void ${3:`
+(camelize (file-name-base (buffer-file-name)))
+`}::set_${1:field}(${2:size_t} ${4:$1}) {
+  $1_ = $4$0;
+}

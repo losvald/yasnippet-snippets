@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-assert-eq
+# key: ga
+# group: testing.gtest
+# --
+ASSERT_EQ(${1:expected}, ${2:actual});

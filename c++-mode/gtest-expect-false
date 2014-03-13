@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-expect-false
+# key: gef
+# group: testing.gtest
+# --
+EXPECT_FALSE(${1:cond});

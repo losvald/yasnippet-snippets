@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-expect-throw
+# key: geh
+# group: testing.gtest
+# TODO: (when (string= "{" yas-text) "}"))
+# --
+EXPECT_ANY_THROW(${1:\{}$0});

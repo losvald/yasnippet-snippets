@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-expect-eq
+# key: ge
+# group: testing.gtest
+# --
+EXPECT_EQ(${1:expected}, ${2:actual});

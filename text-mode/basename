@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: basename
+# key: base
+# --
+`(file-name-base (buffer-file-name))`

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cast
+# key: cast
+# --
+${3:static}_cast<decltype($0>(${1:p})
