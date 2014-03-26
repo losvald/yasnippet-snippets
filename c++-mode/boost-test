@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: test case
-# key: tc
+# name: boost-test
+# key: bt
 # group: testing
 # --
 BOOST_AUTO_TEST_CASE(${1:test_case}) {

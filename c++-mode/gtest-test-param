@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: gtest-test-param
+# key: gtp
+# group: testing.gtest
+# --
+TEST_P(${2:`
+(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
+`}Test, $1) {
+  $0
+}
+
+INSTANTIATE_TEST_CASE_P(Param, $2Test,
+  ${3:::testing::Bool()});

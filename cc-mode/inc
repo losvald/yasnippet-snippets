@@ -1,4 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
 #name : #include "..."
 #key  : inc
 # --
-#include "$1"
+#include "$1.h`
+(substring (file-name-extension "/tmp/base.cpp") 1)
+`"

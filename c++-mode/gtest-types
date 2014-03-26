@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-types
+# key: gy
+# group: testing.gtest
+# --
+typedef ::testing::Types<
+	$2
+> $1;
+TYPED_TEST_CASE(${3:`
+(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
+`Test}, $1);

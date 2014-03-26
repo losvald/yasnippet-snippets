@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-class-param
+# key: gcp
+# --
+class ${2:`(camelize (file-name-base (buffer-file-name)))`}
+: public ::testing::TestWithParam<${1:bool}>{
+  $0
+protected:
+  ${3:void SetUp() \{
+  \}}
+  // void TearDown() {}
+};

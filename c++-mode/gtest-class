@@ -1,0 +1,14 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-class
+# key: gc
+# --
+class ${2:`
+(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
+`}
+  : public ::testing::Test {
+  $0
+protected:
+  ${3:void SetUp() \{
+  \}}
+  // void TearDown() {}
+};

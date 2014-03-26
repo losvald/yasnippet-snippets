@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-assert-throw-none
+# key: gahn
+# group: testing.gtest
+# TODO: (when (string= "{" yas-text) "}"))
+# --
+ASSERT_NO_THROW(${1:\{}$0});

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gtest-expect-throw-none
+# key: gehn
+# group: testing.gtest
+# TODO: (when (string= "{" yas-text) "}"))
+# --
+EXPECT_NO_THROW(${1:\{}$0});
