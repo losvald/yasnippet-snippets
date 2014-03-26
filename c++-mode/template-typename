@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: template-typename
+# key: tt
+# group: template
+# --
+template<typename ${1:T}>

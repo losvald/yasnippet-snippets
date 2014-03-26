@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: template-class
+# key: tc
+# group: template
+# --
+template<class ${1:InputIter}>
