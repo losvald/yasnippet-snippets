@@ -1,9 +1,7 @@
-# -*- mode: snippet -*-
+# -*- mode: snippet; require-final-newline: t -*-
 # name: ifdef
 # key: ifdef
 # --
 #ifdef ${1:MACRO}
-
-$0
-
-#endif // $1
+  `yas/selected-text`$0
+#endif  // $1

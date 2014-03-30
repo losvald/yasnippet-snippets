@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ifdef-debug
+# key: ifdbg
+# --
+#ifdef DEBUG $0
+#endif  // DEBUG
