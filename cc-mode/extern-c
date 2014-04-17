@@ -1,0 +1,13 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name : extern "C"
+# key: C
+# --
+#ifdef __cplusplus
+extern "C" {
+#endif  `(yas-with-comment "__cplusplus")`
+
+          `yas/selected-text`$0
+
+#ifdef __cplusplus
+}
+#endif  `(yas-with-comment "__cplusplus")`
