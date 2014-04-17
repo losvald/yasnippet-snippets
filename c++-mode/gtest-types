@@ -6,6 +6,4 @@
 typedef ::testing::Types<
 	$2
 > $1;
-TYPED_TEST_CASE(${3:`
-(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
-`Test}, $1);
+TYPED_TEST_CASE(${3:`(camelize (file-name-base (buffer-file-name)))`}, $1);

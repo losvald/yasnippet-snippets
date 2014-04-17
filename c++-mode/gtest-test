@@ -3,8 +3,6 @@
 # key: gt
 # group: testing.gtest
 # --
-TEST(${2:`
-(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
-`}Test, $1) {
+TEST(${2:`(camelize (file-name-base (buffer-file-name)))`}, $1) {
   $0
 }

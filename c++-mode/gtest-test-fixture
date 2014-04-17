@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: gtest-test-fixture
+# key: gtf
+# group: testing.gtest
+# --
+TEST_F($2`(camelize (file-name-base (buffer-file-name)))`, $1) {
+  $0
+}

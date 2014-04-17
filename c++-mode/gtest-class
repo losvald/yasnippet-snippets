@@ -3,7 +3,7 @@
 # key: gc
 # --
 class ${2:`
-(camelize (yas/substr (file-name-base (buffer-file-name)) "\\(.*\\)_.*test" 1))
+(camelize (file-name-base (buffer-file-name)))
 `}
   : public ::testing::Test {
   $0
