@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: t -*-
-# name: ifdef
-# key: ifdef
+# name: ifndef
+# key: ifndef
 # --
-#ifdef ${1:MACRO}
+#ifndef ${1:MACRO}
   `yas/selected-text`$0
-#endif  // defined($1)
+#endif  // !defined($1)
