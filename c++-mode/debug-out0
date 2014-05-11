@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: debug-out0
+# key: dout0
+# --
+std::cout$0 << __FILE__ ":" << __LINE__ << "\t$1" << std::endl;

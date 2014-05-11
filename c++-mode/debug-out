@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: debug-out
+# key: dout
+# --
+std::cout$0 << __FILE__ ":" << __LINE__ << "\n\t"
+  << "${1:i}=" << $1 << std::endl;
