@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: typedef-typename
+# key: tdt
+# --
+typedef typename ${1:nesting_type}::${2:dep_name} ${3:$2};

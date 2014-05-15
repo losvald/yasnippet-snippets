@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: typename
+# key: tn
+# --
+typename ${1:${2:nesting_type}::${3:dep_name}}
