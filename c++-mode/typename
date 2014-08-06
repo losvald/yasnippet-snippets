@@ -2,4 +2,4 @@
 # name: typename
 # key: tn
 # --
-typename ${1:${2:nesting_type}::${3:dep_name}}
+typename ${1:`(camelize (file-name-base (buffer-file-name)))`}::${2:dep_name}
