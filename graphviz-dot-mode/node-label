@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: node-label
+# key: nl
+# --
+$1 [ label="${2:$1}" ]
