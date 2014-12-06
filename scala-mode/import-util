@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: import-util
+# key: iu
+# group: import
+# --
+import scala.util.${1:_}

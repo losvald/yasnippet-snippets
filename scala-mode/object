@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: object
+# key: ob
+# --
+object ${1:`(file-name-base (file-name-sans-extension (buffer-file-name)))`}

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: base-collection-mutable
+# key: icm
+# group: import
+# --
+import scala.collection.mutable.${1:_}

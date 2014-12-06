@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: base-collection-immutable
+# key: ici
+# group: import
+# --
+import scala.collection.immutable.${1:_}

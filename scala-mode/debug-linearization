@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: debug-linearization
+# key: dlin
+# --
+{
+  import scala.reflect.runtime.universe._
+  typeOf[${1:`(file-name-base (buffer-file-name))`}].baseClasses foreach {
+    s => Console.err.println(s.fullName)
+  }
+}

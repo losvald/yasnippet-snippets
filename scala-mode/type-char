@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: type-char
+# key : :C
+# group: type
+# --
+${1:c}: Char

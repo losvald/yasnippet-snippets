@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: foreach
+# key: fe
+# group: collection
+# --
+foreach${1:(${2:${4:x} => $3})}

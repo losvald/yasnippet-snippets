@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: main
+# key: main
+# --
+object ${1:`(file-name-base (buffer-file-name))`} {
+  def main(args: Array[String]) {
+    $0
+  }
+}
