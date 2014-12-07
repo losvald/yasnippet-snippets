@@ -3,4 +3,4 @@
 # name: extends
 # key: e
 # --
-extends ${1:AnyRef}
+extends ${1:AnyRef} $0

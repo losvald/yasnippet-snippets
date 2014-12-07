@@ -4,4 +4,4 @@
 # key: pt
 # group: access
 # --
-private[this]
+private[this] $0

@@ -4,4 +4,4 @@
 # key: pi
 # group: access
 # --
-private[`(file-dirname (buffer-file-name))`]
+private[`(file-dirname (buffer-file-name))`] $0

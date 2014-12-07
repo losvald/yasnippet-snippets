@@ -4,4 +4,4 @@
 # key: pr
 # group: access
 # --
-protected[`(file-dirname (buffer-file-name))`]
+protected[`(file-dirname (buffer-file-name))`] $0

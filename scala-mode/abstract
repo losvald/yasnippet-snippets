@@ -3,4 +3,4 @@
 # name: abstract
 # key: ab
 # --
-abstract
+abstract $0
