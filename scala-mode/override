@@ -3,4 +3,4 @@
 # name: override
 # key: o
 # --
-override
+override $1 = $0

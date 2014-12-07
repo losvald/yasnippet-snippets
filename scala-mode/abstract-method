@@ -1,7 +1,0 @@
-# -*- mode: snippet; require-final-newline: t -*-
-# contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: abstract-method
-# key: am
-# group: method
-# --
-def ${1:apply}()${2::${3: Unit}} $0

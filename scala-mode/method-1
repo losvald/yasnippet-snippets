@@ -1,9 +1,7 @@
-# -*- mode: snippet; require-final-newline: t -*-
+# -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: method-1
 # key: m1
 # group: method
 # --
-def ${1:apply}(${2:x}: ${3:Int})${4::${5: Unit}} = {
-    $0
-}
+def ${1:apply}(${2:x}: ${3:Int})${4::${5: Unit}}
