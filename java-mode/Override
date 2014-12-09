@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: @Override
+# key: O
+# group: annot
+# --
+@Override
