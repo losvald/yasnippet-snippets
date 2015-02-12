@@ -1,5 +1,7 @@
-# -*- mode: snippet -*-
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: iterator
-# key: iter
+# key: ir
+# group: std-class
 # --
-${1:std::vector<size_t>}::iterator ${3:iter}
+iterator $0

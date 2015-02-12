@@ -1,5 +1,6 @@
-# -*- mode: snippet -*-
-# name: std::
-# key: st
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: std_colon
+# key: s
 # --
-std::$0
+std::${1:string}

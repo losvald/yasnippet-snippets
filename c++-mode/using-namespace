@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: using-namespace
+# key: un
+# group: namespace
+# --
+using namespace ${1:std};
