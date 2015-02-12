@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: header
+# key: h
+# --
+# -*- mode: snippet; require-final-newline: ${1:nil} -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: `(file-name-base (buffer-file-name))`
+# key: $2
+# --
