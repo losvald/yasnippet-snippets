@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: int64
+# key: i8
+# group: types.fixed-width
+# --
+int64_t

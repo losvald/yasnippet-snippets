@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: uint8
+# key: ui1
+# group: types.fixed-width
+# --
+uint8_t

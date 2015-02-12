@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: unsigned-long-long
+# key: ull
+# group: types
+# --
+unsigned long long

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: uint16
+# key: ui2
+# group: types.fixed-width
+# --
+uint16_t
