@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: visibilities
 # key: pp
+# group: OOP
 # --
 ${1:protected:}
 $0private:
