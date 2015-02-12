@@ -2,5 +2,5 @@
 # key: for
 # group : control structure
 # --
-for ${var} in ${collection}:
+for ${var} in ${range(${collection})}:
     $0

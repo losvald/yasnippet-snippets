@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: print-stderr
+# key: pe
+# group: print
+# --
+print($1, file=sys.stderr)
