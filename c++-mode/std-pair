@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: pair
+# key: sp
+# group: std-class
+# --
+std::pair<${1:std::${2:string}}, ${2:std::${3:string}}>

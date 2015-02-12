@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: std::[algorithm_numeric]
+# key: saln
+# --
+std::`(yas/choose-value '(
+"iota"
+"accumulate"
+"inner_product"
+"adjacent_difference"
+"partial_sum"
+))`

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: priority_queue
+# key: spq
+# group: std-class
+# --
+std::priority_queue<${1:std::${2:string}}${3:, std::vector<$1>, std::greater<$1>}>

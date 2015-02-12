@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: unordered_set
+# key: sue
+# group: std-class
+# --
+std::unordered_set<${1:std::${2:string}}>

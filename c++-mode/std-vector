@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: vector
+# key: sv
+# group: std-class
+# --
+std::vector<${1:std::${2:string}}>
