@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: asInstanceOf
+# key: as
+# --
+asInstanceOf[${1:${2:List}[${3:_}]}]
