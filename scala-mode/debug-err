@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: debug-err
 # key: derr
+# group: debug
 # --
 Console.err.println("${1:DEBUG: }" + ${2:"$3"})

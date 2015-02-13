@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: method-0
 # key: m0
-# group: method
+# group: methods
 # --
 def ${1:apply}${2::${3: Unit}}

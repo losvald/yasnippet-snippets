@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: print
 # key: p
-# group: print
+# group: printing
 # --
 print($1)

@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: import-math
 # key: im
-# group: import
+# group: imports
 # --
 import scala.math.${1:_}

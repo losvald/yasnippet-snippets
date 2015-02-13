@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: type-int
 # key : :I
-# group: type
+# group: types
 # --
 ${1:i}: Int

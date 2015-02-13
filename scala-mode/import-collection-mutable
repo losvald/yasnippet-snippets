@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: base-collection-mutable
 # key: icm
-# group: import
+# group: imports
 # --
 import scala.collection.mutable.${1:_}

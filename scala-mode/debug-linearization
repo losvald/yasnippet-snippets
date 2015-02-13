@@ -2,6 +2,7 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: debug-linearization
 # key: dlin
+# group: debug
 # --
 {
   import scala.reflect.runtime.universe._

@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: import-util
 # key: iu
-# group: import
+# group: imports
 # --
 import scala.util.${1:_}

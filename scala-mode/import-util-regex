@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: import-util-regex
 # key: iur
-# group: import
+# group: imports
 # --
 import scala.util.matching.Regex

@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: type
 # key : :
-# group: type
+# group: types
 # --
 ${2:t}: $1

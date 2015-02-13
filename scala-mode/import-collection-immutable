@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: base-collection-immutable
 # key: ici
-# group: import
+# group: imports
 # --
 import scala.collection.immutable.${1:_}
