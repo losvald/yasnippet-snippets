@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: trait
+# key: tr
+# --
+trait ${1:`(file-name-base (buffer-file-name))`} $0
