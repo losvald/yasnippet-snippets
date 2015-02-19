@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: exists
+# key: ex
+# group: collection
+# --
+exists${1:(${2:${4:x} => $3})}

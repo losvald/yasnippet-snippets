@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: toIndexedSeq
+# key: tiq
+# group: collection.to
+# --
+toIndexedSeq
