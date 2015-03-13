@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: synchronized
+# key: sy
+# group: concurrency
+# --
+synchronized {
+$0
+}
