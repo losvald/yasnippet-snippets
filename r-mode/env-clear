@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: env-clear
+# key: ec
+# --
+rm(list=ls())
