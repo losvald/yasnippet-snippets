@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: Comparable
+# key: Ce
+# --
+Comparable<${1:`(file-name-base (file-name-sans-extension (buffer-file-name)))`}> $0

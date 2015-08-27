@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: import-io
+# key: iio
+# group: import
+# --
+import java.io.${1:*};

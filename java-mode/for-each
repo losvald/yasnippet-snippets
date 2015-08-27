@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: for-each
+# key: f:
+# group: for
+# --
+for ($1 $2 : ${3:$2s})

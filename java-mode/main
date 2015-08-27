@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: main
+# key: main
+# --
+public class ${1:`(file-name-base (buffer-file-name))`} {
+  public static void main(String[] args) {
+    $0
+  }
+}
