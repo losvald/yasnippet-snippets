@@ -306,7 +306,9 @@ def get_snippet_paths(modes):
         mode_path = os.path.join(args.root_dir, dep_mode)
         for dirpath, dirnames, fnames in os.walk(mode_path, followlinks=True):
             for fname in fnames:
-                if fname.startswith(".") or fname.endswith("~"):
+                bad_prefix = fname.startswith(".") or fname.startswith("#")
+                bad_suffix = fname.endswith("~")
+                if bad_prefix or bad_suffix:
                     continue
                 snippet_path = os.path.join(dirpath, fname)
                 yield dep_mode, os.path.relpath(snippet_path, mode_path)
