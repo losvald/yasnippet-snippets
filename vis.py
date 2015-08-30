@@ -368,7 +368,7 @@ if __name__ == '__main__':
         "--mode-colors-file", nargs='?', type=argparse.FileType('r'),
         default=os.path.join(
             os.path.dirname(os.path.realpath(__file__)),
-            ".mode-colors")
+            ".mode-colors.json")
     )
     parser.add_argument("--no-mode-color", action='store_true')
     parser.add_argument(

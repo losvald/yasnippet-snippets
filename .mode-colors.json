@@ -1,0 +1,7 @@
+{
+	"cc-mode": "#40e0d0",
+	"c-mode": "blue",
+	"c++-mode": "blue",
+	"java-mode": "orange",
+	"python-mode": "green",
+	"scala-mode": "red"}
