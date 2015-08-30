@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: print-stderr
-# key: pe
+# name: print generic
+# key: pg
 # group: print
 # --
-print($3${4:, sep="$5"}${6:, end="${7:\n}"}, file=${1:sys.std${2:out}})
+print(${0:}${5:, sep="$6"}${3:, end="$4"}, file=${1:sys.std${2:out}})
