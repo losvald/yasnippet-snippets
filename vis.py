@@ -195,6 +195,16 @@ class PrefixTree(object):
     def compress(self):
         return self._compress([])
 
+    def _dfs(self, key_chunks, visitor, context):
+        visitor(self, key_chunks, context)
+        for edge, subtree in self.sufs.iteritems():
+            key_chunks.append(edge)
+            subtree._dfs(key_chunks, visitor, context)
+            key_chunks.pop()
+
+    def dfs(self, visitor, context):
+        self._dfs([], visitor, context)
+
     def __str__(self):
         return "{0}@{1}".format(list(self.snippets), self.sufs)
     __repr__ = __str__
@@ -308,10 +318,26 @@ def match_mode_by_prefix(modes):
             os.path.isdir(os.path.join(args.root_dir, filename))
         )
     all_modes = filter(is_mode_dir, os.listdir(args.root_dir))
-    print(modes, file=sys.stderr)
     return filter(
         lambda name: any(map(lambda prefix: name.startswith(prefix), modes)),
         all_modes)
+
+def check_conflicts(hdr_key, tries):
+    class Context(object):
+        ok = True
+    def report_conflicts(node, key_chunks, ctx):
+        if len(node.snippets) > 1:
+            ctx.ok = False
+            non_unique = None
+            for s in node.snippets:
+                non_unique = non_unique or s.hdr.get(hdr_key)
+            print("error:", hdr_key, "conflict:", non_unique,
+                  file=sys.stderr)
+            for s in node.snippets:
+                print("@", s.rel_path, file=sys.stderr)
+    ctx = Context()
+    tries[hdr_key].dfs(report_conflicts, ctx)
+    return ctx.ok
 
 if __name__ == '__main__':
     global args
@@ -343,29 +369,31 @@ if __name__ == '__main__':
     )
     parser.add_argument("--no-mode-color", action='store_true')
     parser.add_argument(
+        "--dot-format", default="svg",
+        help="Output format of the visualizer (SVG by default)",
+    )
+    excl_group = parser.add_mutually_exclusive_group()
+    excl_group.add_argument(
         "-p", "--preview", action='store_true',
         help=("Interactively preview in browser. The browser command is set" +
               " via the YASNIPPET_VIS_PREVIEW environmental variable."),
     )
-    parser.add_argument(
-        "--dot-format", default="svg",
-        help="Output format of the visualizer (SVG by default)",
+    excl_group.add_argument(
+        "-c", "--check-only", action='store_true',
+        help="Do not generate any output, just check for conflicts",
     )
+    parser.add_argument("-f", "--force", action='store_true')
     parser.add_argument("--dry-run", action='store_true')
     parser.add_argument(
         "mode", nargs='+',
         help="major mode; can be prefix if unique",
     )
     args = parser.parse_args()
-    print(args, args.mode)
 
     matching_modes = match_mode_by_prefix(args.mode)
     if not matching_modes:
         parser.error("no match for modes: " + ",".join(args.mode))
     args.mode = matching_modes
-
-    print(compute_mode_deps(["c++-mode", "text-mode"]), file=sys.stderr)
-    print(compute_mode_deps(["c-mode"]), file=sys.stderr)
 
     deps = compute_mode_deps(args.mode)
     if args.no_parents:
@@ -404,6 +432,14 @@ if __name__ == '__main__':
     for hdr_key in tries.keys():  # copy
         tries[hdr_key] = tries[hdr_key].compress()
 
-    vis = DotVisualizer(tries[args.key], args.key)
-    with vis:
-        vis()
+    # If several modes are specified, conflict checking is redundant
+    # (i.e., only conflicts within dependency tree make sense)
+    skip_check_conflicts = (len(matching_modes) > 1)
+    if not skip_check_conflicts and not check_conflicts('name', tries):
+        if not args.force:
+            sys.exit(1)
+
+    if not args.check_only:
+        vis = DotVisualizer(tries[args.key], args.key)
+        with vis:
+            vis()
