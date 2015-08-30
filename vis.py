@@ -317,6 +317,7 @@ def match_mode_by_prefix(modes):
             not filename.startswith(".") and
             os.path.isdir(os.path.join(args.root_dir, filename))
         )
+    modes = map(lambda mode: mode.rstrip(os.path.sep), modes)
     all_modes = filter(is_mode_dir, os.listdir(args.root_dir))
     return filter(
         lambda name: any(map(lambda prefix: name.startswith(prefix), modes)),
