@@ -416,30 +416,30 @@ if __name__ == '__main__':
                 ",".join(sorted(dep_modes)),
                 file=sys.stderr)
 
-    tries = dict((hdr_key, PrefixTree()) for hdr_key in prefix_tree_key_choices)
+    trees = dict((hdr_key, PrefixTree()) for hdr_key in prefix_tree_key_choices)
     for mode, rel_path in get_snippet_paths(modes):
         snippet_path = os.path.join(args.root_dir, mode, rel_path)
         snippet = Snippet(snippet_path)
-        for hdr_key in tries:
+        for hdr_key in trees:
             key = snippet.hdr.get(hdr_key)
             if key is not None:
-                tries[hdr_key].put(key, snippet)
+                trees[hdr_key].put(key, snippet)
             elif hdr_key == 'key':
                 print(
                     "warning: snippet without key:",
                     os.path.join(mode, rel_path),
                     file=sys.stderr)
-    for hdr_key in tries.keys():  # copy
-        tries[hdr_key] = tries[hdr_key].compress()
+    for hdr_key in trees.keys():  # copy
+        trees[hdr_key] = trees[hdr_key].compress()
 
     # If several modes are specified, conflict checking is redundant
     # (i.e., only conflicts within dependency tree make sense)
     skip_check_conflicts = (len(matching_modes) > 1)
-    if not skip_check_conflicts and not check_conflicts('name', tries):
+    if not skip_check_conflicts and not check_conflicts('name', trees):
         if not args.force:
             sys.exit(1)
 
     if not args.check_only:
-        vis = DotVisualizer(tries[args.key], args.key)
+        vis = DotVisualizer(trees[args.key], args.key)
         with vis:
             vis()
