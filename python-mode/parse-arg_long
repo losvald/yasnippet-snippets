@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: add_arg
+# key: pa
+# group: lib.argparse
+# --
+${1:parser}.add_argument(
+  "--${2:long-opt}",
+  help="$0")

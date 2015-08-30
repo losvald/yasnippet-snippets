@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: exclusive group
+# key: pax
+# group: lib.argparse
+# --
+${2:${3}_group} = ${1:parser}.add_mutually_exclusive_group()

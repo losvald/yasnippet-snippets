@@ -1,9 +1,14 @@
-# -*- mode: snippet -*-
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: parse_args
 # key: pargs
-# group: argparser
+# group: lib.argparse
 # --
-def parse_arguments():
-    parser = argparse.ArgumentParser(description='$1')
-    $0
-    return parser.parse_args()
+import argparse
+import sys
+
+def parse_args(${1:args=sys.argv}):
+    parser = argparse.ArgumentParser(
+        prog=${1:args[0]},
+        description="""$0""")
+    return parser.parse_args(args[1:])

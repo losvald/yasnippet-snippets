@@ -1,0 +1,14 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: add_arg -v
+# key: pav
+# group: lib.argparse
+# --
+${1:parser}.add_argument(
+    "-v", "--verbose", dest='v', action='count', default=0,
+    help="$0increase output verbosity (can be repeated)")
+
+${2:
+def v_print(min_verbosity, *args, **kwargs):
+    if args.verbosity >= min_verbosity:
+        print(*args, **kwargs)}

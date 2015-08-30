@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: add_arg FileType
+# key: paft
+# group: lib.argparse
+# --
+${1:parser}.add_argument(
+  "-${3:o}", "--${2:output}-file", type=argparse.FileType('${4:w}'),
+  ${5:nargs='?', const="${6:-}",}
+  help="$0")

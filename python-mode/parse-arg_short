@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: add_arg -s
+# key: pas
+# group: lib.argparse
+# --
+${1:parser}.add_argument(
+  "-${2:f}", ${3:"--${4:force}",}
+  help="$0")

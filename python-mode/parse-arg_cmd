@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: parse-arg cmd
+# key: pacmd
+# group: lib.argparse
+# --
+parser_$1 = subparsers.add_parser(
+    '$1', help="")
