@@ -1,11 +1,39 @@
 # -*- mode: snippet -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: script
 # key: script
 # --
 #!/usr/bin/env python
 
-def main():
-   pass
+from __future__ import print_function
+
+import argparse
+import errno
+import os, os.path
+import re
+import subprocess
+import sys
+
+def parse_args(args=sys.argv):
+    parser = argparse.ArgumentParser(
+        prog=${1:args[0]},
+        description="""$0""")
+    parser.add_argument(
+        "-v", "--verbose", dest='v', action='count', default=0,
+        help="increase output verbosity (can be repeated)")
+    return parser.parse_args(args[1:])
+
+def v_print(min_verbosity, *args, **kwargs):
+    if args.verbosity >= min_verbosity:
+        print(*args, **kwargs)
+
+def main(_args=sys.argv):
+    global args
+    args = parse_args(_args)
+
+    # TODO:
+    raise NotImplementerError
+    return 0
 
 if __name__ == '__main__':
-   main()
+   sys.exit(main())
