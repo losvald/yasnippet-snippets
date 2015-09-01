@@ -1,9 +1,9 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: add_arg -s
-# key: pas
+# name: add_arg --true
+# key: pat
 # group: lib.argparse
 # --
 ${1:parser}.add_argument(
-  "-${2:$(yas/substr yas-text ".")}", "--${2:force}",
+  ${3:"-${4:${2:$(yas/substr yas-text ".")}}", }"--${2:long}", action='store_true',
   help="$0")
