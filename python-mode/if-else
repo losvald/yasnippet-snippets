@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: ternary if
+# key: ie
+# --
+${3:None} if ${1:${2:value} is None} else $0$2
