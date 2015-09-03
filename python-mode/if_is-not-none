@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: if_is-not-none
+# key: iinu
+# --
+if ${1:x} is not None:
+   $0${2:= }$1
