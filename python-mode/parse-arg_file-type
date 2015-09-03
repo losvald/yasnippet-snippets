@@ -1,4 +1,4 @@
-# -*- mode: snippet; require-final-newline: t -*-
+# -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: add_arg FileType
 # key: paft

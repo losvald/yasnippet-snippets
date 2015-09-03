@@ -5,5 +5,5 @@
 # group: lib.argparse
 # --
 ${1:parser}.add_argument(
-  "-${2:$(yas/substr yas-text ".")}", "--${2:force}",
+  "-${3:${2:$(yas/substr yas-text ".")}}", "--${2:force}",
   help="$0")
