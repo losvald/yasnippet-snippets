@@ -3,7 +3,7 @@
 # name: script
 # key: script
 # --
-#!/usr/bin/env python
+#!/usr/bin/${1:env }python
 
 from __future__ import print_function
 
@@ -14,26 +14,25 @@ import re
 import subprocess
 import sys
 
-def parse_args(args=sys.argv):
+def main(args=sys.argv):
     parser = argparse.ArgumentParser(
-        prog=${1:args[0]},
+        prog=${2:args[0]},
         description="""$0""")
     parser.add_argument(
         "-v", "--verbose", dest='v', action='count', default=0,
         help="increase output verbosity (can be repeated)")
-    return parser.parse_args(args[1:])
+    # TODO: expand more snippets here (prefix pa + acronym (usually 1st letter))
+    args = parser.parse_args(args[1:])
+    # TODO: context-aware args overrides (e.g., if args.foo depends on args.bar)
 
-def v_print(min_verbosity, *args, **kwargs):
-    if args.verbosity >= min_verbosity:
-        print(*args, **kwargs)
+    global ARGS; ARGS = args
+    v_print(1, "ARGS:", args)
 
-def main(_args=sys.argv):
-    global args
-    args = parse_args(_args)
-
-    # TODO:
-    raise NotImplementerError
+    # TODO: main logic here (return non-zero to make the script fail, or raise)
     return 0
 
-if __name__ == '__main__':
-   sys.exit(main())
+def v_print(min_verbosity, *args, **kwargs):
+    if ARGS.v >= min_verbosity:
+        print(*args, **kwargs)
+
+if __name__ == '__main__': sys.exit(main())
