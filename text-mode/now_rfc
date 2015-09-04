@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: now (RFC 3339)
+# key: now
+# --
+`(format-time-string "%Y-%m-%d %H:%M:%S" (current-time))`

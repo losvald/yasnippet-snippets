@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: today %Y-%m-%d
+# key: today
+# --
+`(format-time-string "%Y-%m-%d" (current-time))`
