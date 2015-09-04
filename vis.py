@@ -185,7 +185,7 @@ class PrefixTree(object):
             del self.sufs[edge]
             self.sufs["".join(comp_edge)] = subtree
 
-        if len(self.sufs) == 1:
+        if len(self.sufs) == 1 and not self.snippets:
             sole_edge, sole_child = self.sufs.popitem()
             par_comp_edge.append(sole_edge)
             return sole_child
@@ -358,7 +358,7 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         "--no-compress", dest='compress', action='store_false',
-        help="Do not compress edges in prefix tree if sole child")
+        help="Do not compress prefix tree nodes without snippets")
     parser.add_argument(
         "--sort", choices=("all", "root", "none"), default="all",
         help="Which siblings to sort in the prefix tree",
