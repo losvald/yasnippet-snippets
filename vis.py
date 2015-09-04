@@ -357,8 +357,11 @@ if __name__ == '__main__':
         help="Do not include dependent modes as per .yas-parents",
     )
     parser.add_argument(
+        "--no-compress", dest='compress', action='store_false',
+        help="Do not compress edges in prefix tree if sole child")
+    parser.add_argument(
         "--sort", choices=("all", "root", "none"), default="all",
-        help="Do not sort siblings in the prefix tree",
+        help="Which siblings to sort in the prefix tree",
     )
     parser.add_argument(
         "-k", "--key", choices=prefix_tree_key_choices, default="key",
@@ -432,8 +435,9 @@ if __name__ == '__main__':
                     "warning: snippet without key:",
                     os.path.join(mode, rel_path),
                     file=sys.stderr)
-    for hdr_key in trees.keys():  # copy
-        trees[hdr_key] = trees[hdr_key].compress()
+    if args.compress:
+        for hdr_key in trees.keys():  # copy
+            trees[hdr_key] = trees[hdr_key].compress()
 
     # If several modes are specified, conflict checking is redundant
     # (i.e., only conflicts within dependency tree make sense)
