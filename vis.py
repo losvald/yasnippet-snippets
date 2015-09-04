@@ -185,7 +185,7 @@ class PrefixTree(object):
             del self.sufs[edge]
             self.sufs["".join(comp_edge)] = subtree
 
-        if len(self.sufs) == 1 and not self.snippets:
+        if len(self.sufs) == 1 and not self.snippets and par_comp_edge:
             sole_edge, sole_child = self.sufs.popitem()
             par_comp_edge.append(sole_edge)
             return sole_child
