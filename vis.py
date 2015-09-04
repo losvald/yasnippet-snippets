@@ -275,7 +275,9 @@ class Snippet(object):
 
     @property
     def _properties(self):
-        for key, value in self.hdr.iteritems():
+        hdr = self.hdr.copy()
+        hdr.setdefault('group', "")
+        for key, value in hdr.iteritems():
             yield key, value
         for key, value in self.meta.iteritems():
             yield key, value
