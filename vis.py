@@ -226,7 +226,7 @@ class Snippet(object):
     _HEADER_META_RE = re.compile(r"^\s*#\s*-\*-\s+(.*)-\*-\s*$")
     _HEADER_KEY_VAL_RE = re.compile(r"^\s*#([^:]*):\s*(.*?)\s*$")
 
-    def __init__(self, path, parse_body=False):
+    def __init__(self, path):
         self.hdr = {}
         self.meta = {}
         body_lines = []
@@ -235,7 +235,7 @@ class Snippet(object):
             for line in f.readlines():
                 if not hdr_parsed and self._HEADER_END_RE.match(line):
                     hdr_parsed = True
-                    if not parse_body:
+                    if args.body is None:
                         break
 
                 if hdr_parsed:
@@ -262,6 +262,25 @@ class Snippet(object):
 
         self.body = "".join(body_lines) if body_lines else None
         self.rel_path = os.path.relpath(path, args.root_dir)
+
+    def matches(self, negatable_regexp_dict):
+        for key, value in self._properties:
+            neg_and_regexp = negatable_regexp_dict.get(key)
+            if neg_and_regexp:
+                negated, positive_regexp = neg_and_regexp
+                if bool(positive_regexp.search(value)) == negated:
+                    print("ignoring snippet: ", self.rel_path, file=sys.stderr)
+                    return False
+        return True
+
+    @property
+    def _properties(self):
+        for key, value in self.hdr.iteritems():
+            yield key, value
+        for key, value in self.meta.iteritems():
+            yield key, value
+        yield 'path', self.rel_path
+        yield 'body', self.body
 
     @property
     def major_mode(self):
@@ -368,6 +387,18 @@ if __name__ == '__main__':
         help="Key used for grouping snippets in the prefix tree",
     )
     parser.add_argument(
+        "--name", metavar="REGEX",
+        help="Filter snippets by name (prefix by (?~) to negate)")
+    parser.add_argument(
+        "--group", metavar="REGEX",
+        help="Filter snippets by group (prefix by (?~) to negate)")
+    parser.add_argument(
+        "--path", metavar="REGEX",
+        help="Filter snippets by relative path (prefix by (?~) to negate)")
+    parser.add_argument(
+        "--body", metavar="REGEX",
+        help="Filter snippets by body (prefix by (?~) to negate)")
+    parser.add_argument(
         "--mode-colors-file", nargs='?', type=argparse.FileType('r'),
         default=os.path.join(
             os.path.dirname(os.path.realpath(__file__)),
@@ -422,10 +453,22 @@ if __name__ == '__main__':
                 ",".join(sorted(dep_modes)),
                 file=sys.stderr)
 
+    NEGATED_REGEX_PREFIX = "(?~)"
+    regexps = dict((
+        (key, (                 # map key to (<negated>, <positive_regex>)
+            regexp_str.startswith(NEGATED_REGEX_PREFIX),
+            re.compile(regexp_str.split(NEGATED_REGEX_PREFIX)[-1])))
+        for (key, regexp_str) in filter(  # but only for specified regexes
+                lambda key_regex: key_regex[1] is not None,
+                ((key, getattr(args, key))
+                 for key in ('name', 'group', 'path', 'body')))))
+
     trees = dict((hdr_key, PrefixTree()) for hdr_key in prefix_tree_key_choices)
     for mode, rel_path in get_snippet_paths(modes):
         snippet_path = os.path.join(args.root_dir, mode, rel_path)
         snippet = Snippet(snippet_path)
+        if not snippet.matches(regexps):
+            continue
         for hdr_key in trees:
             key = snippet.hdr.get(hdr_key)
             if key is not None:
