@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: CREATE TABLE (new)
 # key: ce0
+# group: schema
 # --
 CREATE TABLE $1 ( $0 );

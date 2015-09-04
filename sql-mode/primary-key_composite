@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: PRIMARY KEY ()
 # key: pk(
+# group: schema
 # --
 PRIMARY KEY ($0)

@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: INSERT
 # key: iv
+# group: write
 # --
 INSERT INTO ${1:table} VALUES ($0);

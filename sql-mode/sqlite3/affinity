@@ -2,6 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: affinity
 # key: 3a
-# group: sqlite3
+# group: sqlite3.schema
 # --
 `(upcase (yas-choose-value '("text" "numeric" "integer" "real" "blob")))`

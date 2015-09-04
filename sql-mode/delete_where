@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: DELETE WHERE
 # key: dw
+# group: write
 # --
 DELETE FROM $1 WHERE ${3:name} ${4:==} $0;

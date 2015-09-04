@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: ROLLBACK TO
 # key: rt
+# group: transaction
 # --
 ROLLBACK TO SAVEPOINT $0

@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: UNIQUE
 # key: q
+# group: schema
 # --
 UNIQUE

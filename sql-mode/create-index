@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: CREATE INDEX
 # key: cx
+# group: schema
 # --
 CREATE ${2:UNIQUE }INDEX ${1:IF NOT EXISTS} ${4:IX_$3_$5} ON ${3:table} ($0);

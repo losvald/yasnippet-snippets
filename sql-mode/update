@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: UPDATE
 # key: p
+# group: write
 # --
 UPDATE ${1:table} SET $0 WHERE

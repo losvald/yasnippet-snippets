@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: CONSTRAINT
 # key: ct
+# group: schema
 # --
 CONSTRAINT $0

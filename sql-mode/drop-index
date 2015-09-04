@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: DROP INDEX
 # key: dx
+# group: schema
 # --
 DROP INDEX ${1:IF NOT EXISTS} $0;

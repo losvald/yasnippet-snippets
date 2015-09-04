@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: FOREIGN KEY ()
 # key: fk(
+# group: schema
 # --
 FOREIGN KEY ($0) REFERENCES ${1:table} (${2:columns})

@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: RELEASE SAVEPOINT
 # key: rs
+# group: transaction
 # --
 RELEASE SAVEPOINT $0

@@ -2,6 +2,7 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: CREATE TABLE
 # key: ce
+# group: schema
 # --
 CREATE TABLE $1 ${2:IF NOT EXISTS} (
        $0

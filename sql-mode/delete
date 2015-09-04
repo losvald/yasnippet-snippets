@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: DELETE
 # key: d
+# group: write
 # --
 DELETE

@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: AUTOINCREMENT
 # key: 3ai
+# group: sqlite3.schema
 # --
 AUTOINCREMENT

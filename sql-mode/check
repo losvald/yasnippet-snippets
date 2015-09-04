@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: CHECK
 # key: ck
+# group: schema
 # --
 CHECK ($0)

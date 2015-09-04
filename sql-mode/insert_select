@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: INSERT SELECT
 # key: is
+# group: write
 # --
 INSERT INTO ${1:table} SELECT $0;

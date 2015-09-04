@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: COMMIT
 # key: c
+# group: transaction
 # --
 COMMIT;

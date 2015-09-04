@@ -2,5 +2,6 @@
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: INSERT 4 VALUES
 # key: i4
+# group: write
 # --
 INSERT INTO ${1:table} (${2:name}, ${3:col2}, ${4:col3}, ${5:col4}) $0VALUES ('$6', '$7', '$8', '$9');
