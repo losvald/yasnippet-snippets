@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: date-time
+# key: 3dt
+# group: sqlite3.date-time
+# --
+datetime('${1:2015-${2:00}-${3:00}}', $0'`(yas-choose-value '("localtime" "utc" "unixepoch"))`')

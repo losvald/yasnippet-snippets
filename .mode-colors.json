@@ -4,4 +4,5 @@
 	"c++-mode": "blue",
 	"java-mode": "orange",
 	"python-mode": "green",
-	"scala-mode": "red"}
+	"scala-mode": "red",
+	"sql-mode": "orange"}

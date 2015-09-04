@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: BETWEEN AND
+# key: ba
+# --
+BETWEEN $1 AND $0

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: SELECT COUNT(DISTINCT )
+# key: scd
+# --
+SELECT COUNT(DISTINCT ${1:*}) FROM $0

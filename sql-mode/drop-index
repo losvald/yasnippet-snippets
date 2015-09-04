@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: DROP INDEX
+# key: dx
+# --
+DROP INDEX ${1:IF NOT EXISTS} $0;

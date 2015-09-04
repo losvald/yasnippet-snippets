@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: affinity
+# key: 3a
+# group: sqlite3
+# --
+`(upcase (yas-choose-value '("text" "numeric" "integer" "real" "blob")))`

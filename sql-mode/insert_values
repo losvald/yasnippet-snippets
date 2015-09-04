@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: INSERT
+# key: iv
+# --
+INSERT INTO ${1:table} VALUES ($0);

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: <OUTER> JOIN
+# key: jo
+# --
+(upcase (yas-choose-value '("left" "right" "full")))` JOIN ${1:rhs} ON $1.${2:col} ${4:=} ${3:lhs}.$2

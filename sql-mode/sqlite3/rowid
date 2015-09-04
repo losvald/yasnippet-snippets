@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: _ROWID_
+# key: 3r
+# group: sqlite3
+# --
+_ROWID_

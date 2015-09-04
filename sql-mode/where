@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: WHERE
+# key: w
+# --
+WHERE ${1:name} ${2:=} $0

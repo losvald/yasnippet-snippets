@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: PRIMARY KEY
+# key: pk
+# --
+PRIMARY KEY

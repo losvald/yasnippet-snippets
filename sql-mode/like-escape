@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: LIKE ESCAPE
+# key: le
+# --
+LIKE '$0' ESCAPE '${1:\}'

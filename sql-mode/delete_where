@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: DELETE WHERE
+# key: dw
+# --
+DELETE FROM $1 WHERE ${3:name} ${4:==} $0;

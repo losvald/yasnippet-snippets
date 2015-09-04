@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: SELECT DISTINCT
+# key: sd
+# --
+SELECT DISTINCT $0 FROM ${1:tables}

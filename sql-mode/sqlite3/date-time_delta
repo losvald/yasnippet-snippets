@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: date-time +-N
+# key: 3dtn
+# group: sqlite3.date-time
+# --
+${1:NNN} `(yas-choose-value '("years" "months" "days" "hours" "minutes" "seconds"))`

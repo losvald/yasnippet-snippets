@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: date-time Unix
+# key: 3dtx
+# group: sqlite3.date-time
+# --
+'{1:unix_time}', 'unixepoch'

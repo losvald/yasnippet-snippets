@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: date-time local
+# key: 3dtl
+# group: sqlite3.date-time
+# --
+'localtime'
