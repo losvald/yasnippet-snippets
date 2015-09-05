@@ -87,7 +87,7 @@ class DotVisualizer(Visualizer):
     def _stringify_attrs(self, **kwargs):
         return "[ " + ",".join(
             '%s=%s' % (
-                k, "<" + "".join(v) + ">" if hasattr(v, '__iter__')
+                k, "< " + "".join(v) + " >" if hasattr(v, '__iter__')
                 else '"' + str(v) + '"')
             for k, v in kwargs.iteritems()
         ) + " ]"
