@@ -3,3 +3,6 @@
 
 # vis.py output files
 /*-mode.*
+/vis/*
+!/vis/**/
+!/vis/**/*.sh
