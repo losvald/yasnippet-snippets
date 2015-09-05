@@ -4,4 +4,4 @@
 # key: pe
 # group: print
 # --
-print($1, file=sys.stderr)
+print($0, file=sys.stderr)

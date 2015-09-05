@@ -4,4 +4,4 @@
 # key: pg
 # group: print
 # --
-print(${0:}${5:, sep="$6"}${3:, end="$4"}, file=${1:sys.std${2:out}})
+print($0${5:, sep="$6"}${3:, end="$4"}, file=${1:sys.std${2:out}})
