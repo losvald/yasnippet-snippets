@@ -1,5 +1,5 @@
-# -*- mode: snippet -*-
+# -*- mode: snippet; require-final-newline: nil -*-
 # name: group
-# key: group
+# key: g
 # --
-# group : ${1:group}
+# group: ${1:group}
