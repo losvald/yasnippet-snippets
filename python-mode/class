@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: class
+# key: cl
+# group: OOP
+# --
+class ${1:`(camelize (file-name-base (buffer-file-name)))`}(object):
+      $0

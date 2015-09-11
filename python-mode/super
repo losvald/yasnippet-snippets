@@ -1,6 +1,6 @@
-# -*- mode: snippet -*-
-# name: super
-# key: super
-# group: object oriented
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: super(Class, self)
+# key: sr2
+# group: OOP
 # --
-super(${1:Class}, self).${2:function}(${3:args})
+super(${1:`(camelize (file-name-base (buffer-file-name)))`}, self).${2:__init__}($0)

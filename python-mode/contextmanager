@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: @contextmanager
+# key: @cr
+# group: lib
+# --
+@${1:contextlib.}contextmanager
+def ${2:func}($0):
+    # TODO: init
+    yield
+    # TODO: cleanup

@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: @property
+# key: py
+# group: OOP
+# --
+@property
+def ${1:name}(self):
+    return self.${2:_$1}
