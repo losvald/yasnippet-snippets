@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: .mode column
+# key: 3mc
+# group: sqlite3
+# --
+.mode column
