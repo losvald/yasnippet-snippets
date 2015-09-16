@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: script dir
+# key: sd
+# --
+scriptdir=\$(dirname "\$(readlink -f "\$0")")
