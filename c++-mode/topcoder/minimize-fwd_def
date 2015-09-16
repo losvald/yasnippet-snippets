@@ -1,0 +1,14 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: def Minimize ->
+# key: dMNF
+# --
+template<typename T, typename U, typename... US, size_t N = 1 + sizeof...(US),
+         typename = typename std::enable_if<N - 1>::type>
+inline size_t Minimize(T& res, U&& x, US&&... xs) {
+  using std::forward;
+  const auto minimized = Minimize(res, x);
+  const auto end_index = Minimize(res, forward<US>(xs)...);
+  return (end_index != 0) * end_index + (end_index == 0) * (minimized * N);
+  // return end_index ? end_index : minimized * N;  // compiles poorly
+}

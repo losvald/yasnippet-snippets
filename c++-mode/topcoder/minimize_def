@@ -1,0 +1,13 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: def Minimize
+# key: dMN
+# --
+template<typename T, typename U> inline bool Minimize(T& res, const U& x) {
+  return x < res ? res = x, true : false;
+}
+template<typename T, typename U, typename... US, size_t N = 1 + sizeof...(US),
+         typename = typename std::enable_if<N - 1>::type>
+inline bool Minimize(T& res, U&& x, US&&... xs) {
+  return Minimize(res, x) | Minimize(res, std::forward<US>(xs)...);
+}
