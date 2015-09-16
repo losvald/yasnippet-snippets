@@ -4,4 +4,4 @@
 # key: de
 # group: schema
 # --
-DROP TABLE ${1:IF NOT EXISTS} $0;
+DROP TABLE ${1:IF EXISTS} $0;

@@ -4,6 +4,6 @@
 # key: ce
 # group: schema
 # --
-CREATE TABLE $1 ${2:IF NOT EXISTS} (
+CREATE TABLE ${2:IF NOT EXISTS} ${1:TableName} (
        $0
 );
