@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: Rep[Array[T]]
+# key: RA
+# group: LMS
+# --
+Rep[Array[${1:Int}]]
