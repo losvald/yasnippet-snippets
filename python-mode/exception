@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: Exception
+# key: E
+# group: error
+# --
+Exception ${1:as ex}
