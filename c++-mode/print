@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: cout << endl
+# key: p
+# group: print
+# --
+std::cout << $0 << std::endl;
