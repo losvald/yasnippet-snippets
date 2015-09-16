@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: def DivMod
+# key: d%/
+# --
+template<typename T, typename U,
+         typename = typename std::enable_if<std::is_integral<U>::value>::type>
+std::pair<T, T> inline DivMod(const T& lhs, const U& rhs) {
+  const auto d = lhs / rhs;
+  return std::make_pair(d, lhs - d * rhs);
+}

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: (div, mod)
+# key: %/
+# --
+std::tie(${1:div}, ${2:mod}) = DivMod($1, $0);
