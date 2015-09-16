@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: tuple
+# key: MT
+# group: stl
+# --
+std::make_tuple(${1:x}, $0)

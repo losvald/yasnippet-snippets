@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: get<2+>
+# key: 3
+# group: stl
+# --
+std::get<${1:2}>($0)
