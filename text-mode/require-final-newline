@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: require-final-newline
+# key: rfn
+# group: emacs
+# --
+${1:# -*-} require-final-newline: ${2:nil}${1:$(yas-substr yas-text "....$")}
