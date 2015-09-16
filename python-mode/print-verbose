@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: v_print
+# key: pv
+# group: print
+# --
+v_print(${2:1}, $0${1:, file=sys.stderr})
