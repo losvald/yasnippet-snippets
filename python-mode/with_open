@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: with open
+# key: wo
+# group: with
+# --
+with open(${3:path}${1:, "${2:w}"}) as ${4:f}:
+     $0

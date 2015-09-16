@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: popen
+# key: spO
+# group: lib.subprocess
+# --
+subprocess.Popen($0cmd${1:, stdin=${2:${3:p}.stdout}}${4:, stdout=subprocess.PIPE})

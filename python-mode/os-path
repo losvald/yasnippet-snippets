@@ -1,0 +1,37 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+#name : os.path.<func>
+#key  : op
+#group: API
+# --
+os.path.`(yas/choose-value '(
+"abspath"
+"basename"
+"commonprefix"
+"dirname"
+"exists"
+"lexists"
+"expanduser"
+"expandvars"
+"getatime"
+"getmtime"
+"getctime"
+"getsize"
+"isabs"
+"isfile"
+"isdir"
+"ismount"
+"join"
+"normcase"
+"normpath"
+"realpath"
+"relpath"
+"samefile"
+"sameopenfile"
+"samestat"
+"split"
+"splitdrive"
+"splitext"
+"splitunc"
+"walk"
+"supports_unicode_filenames"
+))`(${1:path})
