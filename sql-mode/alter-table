@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: ALTER TABLE
+# key: ae
+# group: schema
+# --
+ALTER TABLE ${1:table} ${2:RENAME TO ${3:new_name}} $0;
