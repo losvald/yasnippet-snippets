@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: set-iter
+# key: si
+# --
+set($2$0 for ${2:x} in ${1:iterable})
