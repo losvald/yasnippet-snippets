@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: UPDATE
-# key: p
+# name: UPDATE SET
+# key: ps
 # group: write
 # --
-UPDATE
+UPDATE$0 SET ${1:${2:name} = NULL}

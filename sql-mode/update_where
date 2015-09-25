@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: UPDATE
-# key: p
+# name: UPDATE WHERE
+# key: pw
 # group: write
 # --
-UPDATE
+UPDATE ${1:table} SET $0 WHERE
