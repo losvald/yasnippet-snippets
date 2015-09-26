@@ -1,6 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: TC SELECT Prob.
-# key: tcsp
-# --
-SELECT name, div, score, contest FROM Problems $0 ORDER BY div DESC, score;

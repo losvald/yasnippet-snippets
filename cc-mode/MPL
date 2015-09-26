@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: t -*-
 # name: MPL
 # key: lM
-# group: licence
+# group: license
 # --
 // ${1:`
 (car (split-string
