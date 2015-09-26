@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: type-boolean
+# name: type-Byte
 # key : :B
 # group: types
 # --
