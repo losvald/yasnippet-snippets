@@ -2,6 +2,7 @@
 \#*\#
 
 # vis.py output files
+/_all-modes.svg
 /*-mode.*
 /vis/*
 !/vis/**/
