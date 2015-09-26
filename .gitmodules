@@ -1,0 +1,3 @@
+[submodule "local"]
+	path = .local
+	url = git@bitbucket.org:losvald/yasnippet-snippets.git
