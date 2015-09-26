@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: tuple
+# name: make_tuple
 # key: MT
 # group: stl
 # --
