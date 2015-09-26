@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: fun
+# key: f
+# --
+(fun ${2:st} => $1)

@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: theorem
+# key: T
+# --
+Theorem ${1:name} : forall $0.
+Proof.
+  admit. (* TODO:  *)
+Qed.

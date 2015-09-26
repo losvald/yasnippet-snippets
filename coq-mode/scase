@@ -1,0 +1,18 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: SCase
+# key: SC
+# --
+S$1Case "$2 = $3".
+  $0 reflexivity.
+S$1Case "$2 = $4".
+  reflexivity.
+S$1Case "$2 = $5".
+  reflexivity.
+S$1Case "$2 = $6".
+  reflexivity.
+S$1Case "$2 = $7".
+  reflexivity.
+S$1Case "$2 = $8".
+  reflexivity.
+S$1Case "$2 = $9".
+  reflexivity.

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: Proof
+# key: P
+# --
+Proof${1: with ${2:e}auto}.
+  $0
+Qed.

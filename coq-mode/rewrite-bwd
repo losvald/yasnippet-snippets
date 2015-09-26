@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: rewrite <-
+# key: r<
+# --
+rewrite <- ${1: in *}. $0

@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: eassumption
+# key: eas
+# --
+eassumption. $0

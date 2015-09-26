@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: admit
+# key: ad
+# --
+admit. $0

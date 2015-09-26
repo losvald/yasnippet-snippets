@@ -1,0 +1,15 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: inductive-poly
+# key: IX
+# --
+Inductive ${1:name} {X : Type} : $2 -> Prop :=
+| $1${3:base} : $1
+| $1$4 : forall
+$1
+| $1$5 : forall
+$1
+| $1$6 : forall
+$1
+| $1$7 : forall
+$1
+.

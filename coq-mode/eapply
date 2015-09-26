@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: eapply
+# key: ea
+# --
+eapply $1. $0

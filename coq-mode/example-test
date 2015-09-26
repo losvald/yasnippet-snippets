@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Example test_
+# key: Et
+# --
+Example test_$1_$2 : $1 $0.

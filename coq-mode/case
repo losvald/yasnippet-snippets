@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Case
+# key: C
+# --
+Case "$1 = $2". reflexivity.
+Case "$1 = $3". reflexivity.
+Case "$1 = $4". reflexivity.
+Case "$1 = $5". reflexivity.
+Case "$1 = $6". reflexivity.
+Case "$1 = $7". reflexivity.
+Case "$1 = $8". reflexivity.
+$0
