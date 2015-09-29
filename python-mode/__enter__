@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: __enter__
-# key: ent
-# group: dunder methods
+# key: de
+# group: OOP
 # --
 def __enter__(self):
     $0

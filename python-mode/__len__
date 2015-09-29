@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: __len__
-# key: len
-# group: dunder methods
+# key: dl
+# group: OOP
 # --
 def __len__(self):
     $0
