@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: CREATE VIEW
+# key: cw
+# --
+CREATE VIEW V_${1:view} AS $0;
