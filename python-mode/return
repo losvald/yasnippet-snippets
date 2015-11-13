@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: return
-# key: r
+# key: ;
 # --
-return $0
+return ${1:ret}$0
