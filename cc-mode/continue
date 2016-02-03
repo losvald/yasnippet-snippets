@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: continue
+# key: ce
+# --
+continue;
