@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: lazy-val
-# key: ll
+# name: val
+# key: l
 # --
-lazy val $1 = $0
+val $0
