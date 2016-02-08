@@ -1,6 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: length
-# key: len
+# name: size
+# key: n
+# group: collection
 # --
-length${1:()}
+${1:($0)}.size
