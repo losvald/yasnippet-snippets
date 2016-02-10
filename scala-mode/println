@@ -4,4 +4,4 @@
 # key: pn
 # group: printing
 # --
-println($1)
+println($0)

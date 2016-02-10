@@ -4,4 +4,4 @@
 # key: pf
 # group: printing
 # --
-printf("$1")
+printf("$1", $0)
