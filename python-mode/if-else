@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: if: else:
+# key: jk
+# group : control structure
+# --
+if $0:
+
+else:
