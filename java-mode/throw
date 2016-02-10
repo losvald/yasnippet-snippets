@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: t -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: throw-new
-# key: tn
+# key: h
 # --
 throw new ${1:IllegalArgumentException}($2);
