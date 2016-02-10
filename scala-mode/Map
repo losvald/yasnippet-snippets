@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: StringBuilder
-# key: gb
+# name: Map
+# key: M
 # group: classes
 # --
-StringBuilder
+Map

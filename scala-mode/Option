@@ -1,7 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: StringBuilder
-# key: gb
-# group: classes
+# name: Option
+# key: O
 # --
-StringBuilder
+Option[$0]

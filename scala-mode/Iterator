@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: Iterator
-# key: It
+# key: I
 # group: classes
 # --
 Iterator
