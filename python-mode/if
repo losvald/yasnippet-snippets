@@ -1,7 +1,7 @@
-# -*- mode: snippet -*-
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: if
-# key: if
+# key: j
 # group : control structure
 # --
-if ${1:cond}:
-   $0
+if $1:

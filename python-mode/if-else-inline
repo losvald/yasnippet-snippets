@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: ternary if
-# key: ie
+# name: cons if cond else alt
+# key: ji
 # group: control structure
 # --
 ${3:None} if ${1:${2:value} is None} else $0$2
