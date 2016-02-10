@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: for-block
+# key: ok
+# --
+for {
+  $0
+}
