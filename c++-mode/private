@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: private
-# key: i
+# key: pi
 # group: OOP.access
 # --
 private:
