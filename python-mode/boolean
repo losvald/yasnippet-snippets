@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: int()
-# key: i
+# name: bool()
+# key: b
 # --
-int($0)
+bool($0)

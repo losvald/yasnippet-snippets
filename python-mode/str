@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: int()
-# key: i
+# name: str()
+# key: g
 # --
-int($0)
+str($0)
