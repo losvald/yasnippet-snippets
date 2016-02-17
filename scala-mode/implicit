@@ -1,7 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: import-math
-# key: imm
-# group: imports
+# name: implicit
+# key: im
 # --
-import scala.math.${1:_}
+implicit $0

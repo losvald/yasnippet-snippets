@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: import-util-regex
-# key: iur
+# key: imr
 # group: imports
 # --
 import scala.util.matching.Regex
