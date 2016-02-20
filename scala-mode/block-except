@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: catch { case
+# key: ke
+# --
+catch { case ex: ${1:${2:IO}Exception} => $0 }
