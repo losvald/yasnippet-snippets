@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: xs = append(xs,
+# key: a
+# --
+${1:xs} = append($1, $0)

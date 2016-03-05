@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: if else
+# key: jk
+# --
+if $0 {
+
+} else {
+
+}

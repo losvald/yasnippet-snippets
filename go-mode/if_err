@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: if err != nil
+# key: je
+# --
+if err != nil {
+	panic(err)
+}

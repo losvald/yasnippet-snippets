@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: complex128
+# key: cx
+# group: types.fixed-width
+# --
+complex128

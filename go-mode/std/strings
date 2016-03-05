@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: strings
+# key: ss
+# group: pkg
+# --
+strings.${1:NewReader(${2:s})}

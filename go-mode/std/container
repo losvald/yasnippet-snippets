@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: container
+# key: sc
+# group: pkg
+# --
+`(yas-choose-value '("heap" "list" "ring"))`.${1:New}(${2:n})

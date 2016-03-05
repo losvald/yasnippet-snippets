@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: switch
+# key: jc
+# --
+switch $1 {
+	case $0:
+
+	default:
+
+}

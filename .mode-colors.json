@@ -2,6 +2,7 @@
 	"cc-mode": "#40e0d0",
 	"c-mode": "blue",
 	"c++-mode": "blue",
+	"go-mode": "#375EAB",
 	"java-mode": "orange",
 	"python-mode": "green",
 	"scala-mode": "red",

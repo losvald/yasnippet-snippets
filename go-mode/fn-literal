@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: func()
+# key: f
+# group: literals
+# --
+func() $1 {
+       $0
+}

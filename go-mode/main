@@ -1,0 +1,23 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: main
+# key: main
+# --
+package main
+
+import (
+	"bufio"
+	"flag"
+	"fmt"
+	"log"
+	"os"
+	"regexp"
+)
+
+func main() {
+     // TODO: add flags
+
+     flag.Parse()
+     log.Info("Flags
+     $0
+}

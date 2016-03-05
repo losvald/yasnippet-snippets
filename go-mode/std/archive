@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: archive
+# key: sa
+# group: pkg
+# --
+`(yas-choose-value '("tar" "zip"))`.${1:NewReader(${2:r})}

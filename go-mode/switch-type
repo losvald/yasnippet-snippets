@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: switch-type
+# key: jt
+# --
+switch ${2:t := }$1.(type) {
+	case nil:
+		$0
+	default:
+
+}

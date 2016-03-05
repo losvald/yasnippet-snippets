@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: fmt.Sprintf("", )
+# key: %
+# group: string
+# --
+fmt.Sprintf("$2%$0", ${1:x})

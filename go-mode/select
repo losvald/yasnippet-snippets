@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: select
+# key: hc
+# --
+select {
+	case $0:
+
+	default:
+
+}

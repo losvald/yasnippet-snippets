@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: while-break
+# key: hk
+# --
+for {
+
+	if $0 {
+		break
+	}
+}

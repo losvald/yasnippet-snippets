@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: compress.PKG.
+# key: scs
+# group: pkg
+# --
+`(yas-choose-value '("bzip2" "flate" "gzip" "lzw" "zlib"))`.${1:NewReader(${2:r})}

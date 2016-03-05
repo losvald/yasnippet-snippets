@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: if , err := ; err == nil
+# key: jo
+# --
+if $1, err := $0; err == nil {
+
+} else {
+	panic(err)
+}

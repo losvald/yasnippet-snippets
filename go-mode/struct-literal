@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: { : }
+# key : :
+# group: literals
+# --
+${1:&${2:Struct}}{ ${3:x}: $0 }

@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: bytes
+# key: sy
+# group: pkg
+# --
+bytes.${1:NewBuffer(${2:bs})}

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: case
+# key: c
+# --
+case $0:
