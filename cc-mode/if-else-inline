@@ -1,8 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: if
-# key: j
+# name: ( ? : )
+# key: ji
 # --
-if ($0) {
-
-}
+(${1:${2:x} == null} ? $0 : $2)

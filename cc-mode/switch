@@ -1,8 +1,15 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: if
-# key: j
+# name: switch
+# key: jc
 # --
-if ($0) {
+switch ($0) {
+  case :
+
+    break;
+  case :
+
+    break;
+  default:
 
 }

@@ -1,8 +1,8 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: if
-# key: j
+# name: else
+# key: jj
 # --
-if ($0) {
-
+else {
+  $0
 }
