@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: method;
+# key: dm
+# --
+${3:bool} ${1:Get$2}($0)${4: const};
