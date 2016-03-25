@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: sprintf("", );
+# key: %
+# group: string
+# --
+sprintf("$2%$0", ${1:x});
