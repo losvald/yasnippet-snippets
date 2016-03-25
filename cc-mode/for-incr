@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: for-incr
+# key: on
+# --
+for (ptrdiff_t ${2:i} = ${3:0}; $2 < ${1:n}; $2++) {
+    $0
+}
