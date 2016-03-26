@@ -1,7 +1,7 @@
-# -*- mode: snippet; require-final-newline: t -*-
+# -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
 # name: printf
 # key: pf
-# group: print
+# group: printing
 # --
-printf("$1");
+printf("$1${2:\n}", $0);
