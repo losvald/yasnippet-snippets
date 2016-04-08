@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: switch
+# key: jm
+# --
+${1:(${2:x})} match {
+  $0
+  case _ =>
+}
