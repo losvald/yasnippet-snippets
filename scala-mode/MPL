@@ -1,0 +1,19 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: MPL
+# key: lM
+# group: license
+# --
+// ${1:`
+(car (split-string
+      (substring (file-name-sans-extension (buffer-file-name))
+		 (length (expand-file-name
+			  (file-name-directory
+			   (substring default-directory 0 -1)))))
+      "/"))
+`}
+//
+// Copyright (C) ${2:2017} Leo Osvald <leo.osvald@gmail.com>
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/."
