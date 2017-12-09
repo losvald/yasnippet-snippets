@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: assert-eq
+# key: ga
+# group: testing
+# --
+assertEquals(${1:expected}, ${2:actual});

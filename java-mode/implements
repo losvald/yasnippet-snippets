@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: implements
+# key: w
+# group: OOP
+# --
+implements ${1:Comparable<${2:Object}>} $0

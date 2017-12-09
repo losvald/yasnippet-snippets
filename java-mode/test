@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: Leo Osvald <leo.osvald@gmail.com>
+# name: test
+# key: t
+# group: testing
+# --
+@Test
+public void test${1:TODO}() {
+  $0
+}
