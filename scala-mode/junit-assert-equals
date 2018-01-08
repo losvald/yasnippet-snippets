@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: junit-assertEquals
+# key: gje
+# group: testing.junit
+# --
+assertEquals(${2:s"$3", }${1:exp}, $0)

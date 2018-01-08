@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: junit-assertTrue
+# key: gj1
+# group: testing.junit
+# --
+assertTrue(${1:s"$2", }$0)

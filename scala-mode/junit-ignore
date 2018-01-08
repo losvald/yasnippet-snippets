@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: junit-ignore
+# key: gji
+# group: testing.junit
+# --
+@org.junit.Ignore $0

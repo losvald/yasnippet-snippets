@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: junit-fail
+# key: gjf
+# group: testing.junit
+# --
+fail(${1:s"$0"})
