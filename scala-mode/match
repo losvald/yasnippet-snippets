@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # contributor: Leo Osvald <leo.osvald@gmail.com>
-# name: switch
+# name: match
 # key: jm
 # --
 ${1:(${2:x})} match {
